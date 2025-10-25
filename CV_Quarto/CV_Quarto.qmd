@@ -1,0 +1,143 @@
+---
+
+title: "Morgane Mikola"
+format:
+  modern2-cv-pdf: default
+author: "Morgane Mikola"
+cvfont: raleway
+cvcolor:
+  main: 2E2E2E
+  accent: 6A2C70
+jobtitle: "Étudiante en études internationales"
+sidebar:
+  image: photo-morgane.jpeg
+  bullets:
+    - Québec, QC, Canada
+    - Français 🇫🇷 | Anglais 🇬🇧 | Espagnol 🇪🇸
+    - Étudiante à l’Université Laval
+---
+
+  sections: 
+    - name: Compétences
+      items:
+      - text: Français
+        exp:
+          text: "Langue maternelle"
+          num: 1
+      - text: Anglais
+        exp:
+          text: "Avancé (C1)"
+          num: 0.8
+      - text: Espagnol
+        exp:
+          text: "Intermédiaire (B2)"
+          num: 0.6
+      - text: Italien
+        exp:
+          text: "Débutant (A2)"
+          num: 0.3
+      - text: Coréen & Japonais
+        exp:
+          text: "Apprentissage en cours"
+          num: 0.2
+    - name: Outils
+      items:
+      - RStudio
+      - Git & GitHub
+      - Canva
+      - Notion
+      - Shotcut
+      - Microsoft Office
+    - name: Education
+       items:
+      - text: "Maîtrise en Études Internationales — spécialisation Commerce international et investissement"
+        inst: "Université Laval, Québec (Canada)"
+        time: "2024 – Présent"
+      - text: "Licence en Langues Étrangères Appliquées — Commerce international"
+        inst: "Université Paris-Est Créteil, France"
+        time: "2019 – 2022"
+        details: "Spécialisation en commerce international"
+    - name: Contact
+      items:
+  - icon: map-marker
+    text: Québec, QC
+  - icon: phone
+    text: "438-788-7235"
+  - icon: envelope
+    text: morgane.mikola@gmail.com
+    href: mailto:morgane.mikola@gmail.com
+  - icon: github
+    text: Lamiko17
+    href: https://github.com/Lamiko17
+  - icon: linkedin
+    text: Morgane Mikola
+    href: https://www.linkedin.com/in/morgane-mikola-7606b21b2/   
+execute: 
+  echo: false
+---
+
+```{r}
+#| label: cvevents
+cvevents <- function(tbl, when, what, where, descr) {
+
+    command_start <- "\\cvevent"
+    tbl[[where]] <- gsub("\n", " \\\\newline ", tbl[[where]])
+    res <- paste0(
+        command_start, "{", tbl[[when]], "}", 
+        "{", tbl[[what]], "}",
+        "{", tbl[[where]], "}",
+        "{", tbl[[descr]], "}"
+        )
+
+    cat(res, sep = "\n\n\n")
+}
+
+cvproj <- function(tbl,what,role,items){
+    command_start <- "\\cvproj"
+    res <- paste0(
+        command_start, "{", tbl[[what]], "}",
+        "{", tbl[[role]], "}",
+        "{", sapply(tbl[[items]], function(x)paste0(x,collapse = ", ")), "}"
+    )
+
+    cat(res, sep = "\n\n\n")
+}
+```
+
+# Présentation
+
+Étudiante en études internationales à l’Université Laval, je m’intéresse aux dynamiques économiques mondiales, à la gouvernance internationale et à l’impact des nouvelles technologies sur le développement. Curieuse et rigoureuse, je combine une approche analytique et interculturelle dans mes projets académiques et personnels.
+
+# Experience
+
+```{r}
+#| label: experience
+#| output: asis
+tibble::tribble(
+    ~role, ~institution, ~dates, ~details,
+"Réceptionniste", "Résidence Lokia, Québec (QC)", "10/2024-Présent", "Réceptionner et stocker la marchandise. Répondre aux appels des clients et les renseigner sur les produits et promotions. Fournir un service à la clientèle de qualité. S’assurer de la propreté du magasin.",
+  "Associée de magasin", "Uniqlo, Québec (QC)", "06/2024-09/2024", "Réceptionner et stocker la marchandise. Répondre aux appels des clients et les renseigner sur les produits et promotions. Fournir un service à la clientèle de qualité. S’assurer de la propreté du magasin.",
+  "Assistante clientèle", "REDER, France", "02/2023-08/2023", "Prendre les commandes et en effectuer le suivi. Répondre aux appels des clients et les renseigner sur les produits et promotions. Rédiger les courriers adressés aux clients. Enregistrer et traiter les réclamations. Mettre à jour et suivre les fichiers clients.",
+  "Téléconseillère", "Playmobil, France", "09/2022-12/2022", "Prendre les commandes et en effectuer le suivi. Répondre aux appels des clients et les renseigner sur les produits et promotions. Enregistrer, traiter et transmettre les réclamations. Mettre à jour et suivre les fichiers clients.",
+  "Assistante marketing", "Type Ranks, France", "07/2022-09/2022", "Démarcher les clients potentiels sur les réseaux sociaux, par téléphone et par campagnes d’emailing. Créer et publier du contenu sur LinkedIn. Traiter la réception des courriels. Réaliser une veille concurrentielle.",
+  "Étudiante ambassadrice", "Université Paris-Est Créteil (UPEC), France", "09/2021-06/2022", "Renseigner les étudiants sur les programmes d’études et les admissions. Participer à l’organisation de salons et ateliers d’orientation. Concevoir et animer des ateliers pour aider à l’orientation des élèves.",
+  "Gestionnaire de médias sociaux", "Caydevents, France", "02/2020-06/2020", "Créer et publier du contenu sur Instagram. Gérer les courriels et les commandes clients. Contacter les clients souhaitant obtenir plus d’informations sur les offres de service.",
+  "Agente d’accueil", "Novotel Sénart, France", "07/2019-08/2019", "Accueillir les clients à la réception et effectuer les enregistrements et départs. Répondre aux appels et aux questions, et prendre les réservations. Réceptionner le courrier et les colis."
+) |>
+    cvevents(when = "dates", what = "role", where = "institution", descr = "details")
+```
+
+# Engagements sociaux 
+
+```{r}
+#| label: proj
+#| output: asis
+tibble::tribble(
+    ~what, ~role, ~items,
+ "Ingénieurs Sans Frontières, Québec", "Participation à une collecte de fonds (2024)", c("Soutien à l’organisation d’événements de financement pour des projets humanitaires.", "Sensibilisation du public aux enjeux de solidarité internationale.", "Appui logistique aux activités de communication et de collecte."),
+  "Aide aux personnes immigrantes allophones", "Bénévole (2021-2023)", c("Soutien à l’intégration linguistique et sociale de nouveaux arrivants.", "Aide à la rédaction de documents administratifs et à la compréhension des démarches.", "Encadrement d’ateliers de conversation en français."),
+  "Accompagnement d’enfants en difficulté scolaire", "Bénévole (2017-2019)", c("Aide aux devoirs et accompagnement individualisé.", "Encouragement à la confiance en soi et à la persévérance scolaire.", "Organisation d’activités éducatives et ludiques adaptées.")
+) |>
+    cvproj(what = "what", role = "role", items = "items")
+
+```
