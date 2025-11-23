@@ -1,5 +1,4 @@
 ---
-
 title: "Morgane Mikola"
 format:
   modern2-cv-pdf: default
@@ -16,7 +15,7 @@ sidebar:
     - Français 🇫🇷 | Anglais 🇬🇧 | Espagnol 🇪🇸
     - Étudiante à l’Université Laval
 ---
-
+---
   sections: 
     - name: Compétences
       items:
@@ -74,6 +73,7 @@ sidebar:
     href: https://www.linkedin.com/in/morgane-mikola-7606b21b2/   
 execute: 
   echo: false
+  
 ---
 
 ```{r}
@@ -139,5 +139,4 @@ tibble::tribble(
   "Accompagnement d’enfants en difficulté scolaire", "Bénévole (2017-2019)", c("Aide aux devoirs et accompagnement individualisé.", "Encouragement à la confiance en soi et à la persévérance scolaire.", "Organisation d’activités éducatives et ludiques adaptées.")
 ) |>
     cvproj(what = "what", role = "role", items = "items")
-
 ```
