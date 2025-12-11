@@ -70,7 +70,7 @@ Les données IIAG exportées depuis le Mo Ibrahim Index étant brutes, j’ai ef
 Ces visualisations permettent de comparer deux indicateurs complémentaires sur la gouvernance et la corruption.
 
 
-```{r prep_donnees, message=FALSE}
+```{r prep_donnees, echo=FALSE, message=FALSE, warning=FALSE}
 library(tidyverse)
 
 # Renommer les colonnes
@@ -93,7 +93,7 @@ iiag_long <- iiag %>%
   )
 ```
 
-```{r graph_ipc, echo=FALSE}
+```{r graph_ipc, echo=FALSE, warning=FALSE}
 library(ggplot2)
 
 ggplot(ipc, aes(x = annee, y = ipc_score)) +
@@ -107,7 +107,7 @@ ggplot(ipc, aes(x = annee, y = ipc_score)) +
   )
 ```
 
-```{r graph_iiag}
+```{r graph_iiag,echo=FALSE, message=FALSE, warning=FALSE}
 groupes <- c(
   "CEDEAO",
   "Afrique Centrale",
