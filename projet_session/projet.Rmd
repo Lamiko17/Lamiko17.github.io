@@ -5,26 +5,126 @@ date: "2025-12-10"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+# 1. Question de recherche et hypothèse
+
+### Question de recherche
+Comment la corruption et le clientélisme dans le secteur minier en République Démocratique du Congo affectent-ils le développement du pays ?
+
+### Brève revue de littérature
+La corruption et le clientélisme dans le secteur minier en République démocratique du Congo constituent des obstacles structurels majeurs au développement du pays. La littérature met en évidence un paradoxe bien établi : malgré la richesse minière exceptionnelle de la RDC (cuivre, cobalt, coltan), et sa place dans le marché extractive mondiale, le pays demeure l’un des plus pauvres du monde. En effet, en 2023 près de 62% de la population vivaient en dessous du seuil de pauvreté (World Bank, 2024).
+
+Selon le rapport de l'ONG Global Witness (2019) la corruption, les contrats opaques et la captation des revenus par une minorité d’élites affaiblissent la capacité de l’État à financer des politiques publiques cohérentes qui sont sensé favorisées la redistribution des revenus issus de la rente ainsi que le développement économique du pays. 
+
+Cette dynamique est confrimer lorsque l'on observe des indices comme l'IIAG (Indice Ibrahim de la Gouvernance en Afrique) classant la gouvernance de la RDC parmi les plus faibles du continent. Certains auteurs soulignent que l’absence de transparence, l’insuffisance des mécanismes de contrôle et le clientélisme institutionnalisé empêchent la mise en œuvre de stratégies de développement crédibles. C'est d'ailleurs le cas d’Acemoglu et Robinson à travers leur théorie des institutions extractives qui nous exepliquent que certaines institutions sont conçues pour permettre l’extraction de ressources par une minorité, celles-ci freinent le développement et la construction d’un État fort.
+
+La plupart des sources que j'ai consulté converge vers le même point,le paradoxe de la RDC — richesse minérale mais pauvreté persistante — aussi appeler la malédictions des ressources s’explique par des institutions fragiles et des pratiques de gouvernance dysfonctionnelles.
+
+### Hypothèse
+La corruption et le clientélisme au sein du secteur minier ne sont pas un dysfonctionnement parmi d’autres : ils constituent l’un des piliers de l’ordre politique congolais, et l’un des obstacles majeurs à la consolidation institutionnelle et donc au développement du pays.  
+
+### Outils utilisés pour cette étape
+- **Google Scholar** : j'ai utilisé google scholar pour la recherche de revues académiques et de textes scientifiques.  
+- **Zotero** : j'ai utilisé cet outil pour l'organisation des sources.  
+- **Notebook LM** : j'ai utilisé Notebook LM pour dégager les concepts clés de mes sources mais aussi pour les comparées.
+
+# 2. Collecte de données 
+
+Pour analyser l’évolution de la corruption et de la gouvernance en République démocratique du Congo, j’ai collecté deux ensembles de données provenant d’organisations internationales reconnues.
+
+### Données IPC (Transparency International)
+J’ai extrait manuellement les scores annuels de l’Indice de perception de la corruption (IPC) depuis le site de Transparency International.  
+Comme l’extraction automatisée via API retournait une erreur serveur, j’ai recréé un tableau CSV contenant les scores du Congo de 2012 à 2024.  
+Ces données mesurent la perception de la corruption dans le secteur public (score entre 0 et 100).
+
+### Données IIAG (Mo Ibrahim Foundation)
+J’ai également collecté les scores du sous-indice « Gouvernance globale » du Mo Ibrahim Index of African Governance (IIAG).  
+Pour ces données le site fournit directement un CSV téléchargeable, donc j'ai pu téléchargé les données directement. 
+
+Les deux tableaux ont été enregistrés au format CSV dans le dossier `data/` du projet, puis importés dans R à l’aide de la fonction `read.csv()`.
+
+```{r import_data}
+# Charger les données IPC (Transparency International)
+ipc <- read.csv("data/ipc_rdc.csv")
+
+# Charger les données IIAG (Mo Ibrahim Foundation)
+iiag <- read.csv("data/iiag_online.csv")
+
+# Afficher les premières lignes pour vérifier
+head(ipc)
+head(iiag)
 ```
 
-## R Markdown
+# 3. Analyse et visualisation des données 
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+Pour analyser les données collectées, j’ai utilisé RStudio, et d'utiliser les packages dplyr et ggplot2.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+### Analyse de l’IPC
 
-```{r cars}
-summary(cars)
+J’ai importé les scores de l’Indice de Perception de la Corruption (Transparency International), puis j’ai visualisé leur évolution entre 2012 et 2024.
+Ce graphique permet d’observer les tendances de la corruption en RDC.
+
+### Analyse des données IIAG
+
+Les données IIAG exportées depuis le Mo Ibrahim Index étant brutes, j’ai effectué un nettoyage minimal pour isoler la ligne correspondant à la RDC, avant de représenter l’évolution de son score de gouvernance globale entre 2014 et 2023.
+
+Ces visualisations permettent de comparer deux indicateurs complémentaires sur la gouvernance et la corruption.
+
+
+```{r prep_donnees, message=FALSE}
+library(tidyverse)
+
+# Renommer les colonnes
+colnames(iiag) <- c(
+  "localisation",
+  "X2014", "X2015", "X2016", "X2017",
+  "X2018", "X2019", "X2020", "X2021", "X2022", "X2023",
+  "changement"
+)
+
+# Transformer au format long
+iiag_long <- iiag %>%
+  pivot_longer(
+    cols = starts_with("X"),
+    names_to  = "annee",
+    values_to = "score"
+  ) %>%
+  mutate(
+    annee = as.numeric(gsub("X", "", annee))
+  )
 ```
 
-## Including Plots
+```{r graph_ipc, echo=FALSE}
+library(ggplot2)
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
+ggplot(ipc, aes(x = annee, y = ipc_score)) +
+  geom_line(color = "#0072B2", size = 1.2) +
+  geom_point(size = 2) +
+  theme_minimal() +
+  labs(
+    title = "Évolution de l’Indice de Perception de la Corruption (RDC, 2012–2024)",
+    x = "Année",
+    y = "Score IPC (0–100, plus élevé = moins corrompu)"
+  )
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+```{r graph_iiag}
+groupes <- c(
+  "CEDEAO",
+  "Afrique Centrale",
+  "Republique democratique du Congo"
+)
+
+iiag_comp <- iiag_long %>% 
+  filter(localisation %in% groupes)
+
+ggplot(iiag_comp, aes(x = annee, y = score, color = localisation)) +
+  geom_line(size = 1.2) +
+  geom_point(size = 3) +
+  theme_minimal() +
+  labs(
+    title = "Comparaison du score IIAG : RDC vs Afrique Centrale vs CEDEAO (2014–2023)",
+    x = "Année",
+    y = "Score IIAG (0–100)",
+    color = "Localisation"
+  )
+```
