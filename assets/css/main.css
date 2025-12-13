@@ -3449,3 +3449,49 @@ input[type="button"]:disabled,
     padding: 0;
   }
 }
+
+/* ================================
+   STYLES ISOLES – PROJET DE SESSION
+   ================================ */
+
+.projet-session{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  line-height: 1.7;
+}
+
+/* Titres */
+.projet-session h1{
+  margin-bottom: 12px;
+}
+
+.projet-session h2{
+  margin-top: 50px;
+  margin-bottom: 14px;
+}
+
+.projet-session h3{
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
+/* Paragraphes */
+.projet-session p{
+  margin: 14px 0;
+}
+
+/* Bloc résumé */
+.projet-session .resume-projet{
+  background: #f4f6f8;
+  border-left: 5px solid #0072B2;
+  padding: 18px 22px;
+  margin: 30px 0 45px 0;
+  border-radius: 6px;
+}
+
+/* Titre centré */
+.projet-session .titre-centre{
+  text-align: center;
+  margin: 45px 0;
+}

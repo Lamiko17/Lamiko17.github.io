@@ -5,9 +5,22 @@ date: "2025-12-10"
 output: html_document
 ---
 
+<div class="projet-session">
+
 <div style="text-align:center;"> 
 <h2>Sujet de recherche : La corruption et le clientélisme au sein du secteur minier en République Démocratique du Congo</h2>
 </div>
+
+
+<div class="resume-projet">
+  <h3>Résumé du projet</h3>
+  <p>
+    Ce projet analyse l’impact de la corruption et du clientélisme dans le secteur minier
+    de la République Démocratique du Congo à partir d’indicateurs internationaux
+    (IPC et IIAG) et d’une analyse exploratoire réalisée sous R.
+  </p>
+</div>
+
 
 # 1. Question de recherche et hypothèse
 
@@ -198,3 +211,5 @@ Natural Resource Governance Institute (NRGI). (2023). Resource Governance Index 
 World Bank. (2023). Poverty and Equity Brief: Democratic Republic of Congo. World Bank Group.
 
 World Bank. (2024). World Development Indicators. World Bank.
+
+</div>
