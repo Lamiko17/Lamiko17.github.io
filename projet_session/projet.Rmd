@@ -5,44 +5,54 @@ date: "2025-12-10"
 output: html_document
 ---
 
+<div style="text-align:center;"> 
+<h2>Sujet de recherche : La corruption et le clientélisme au sein du secteur minier en République Démocratique du Congo</h2>
+</div>
+
 # 1. Question de recherche et hypothèse
 
-### Question de recherche
+#### **Question de recherche**
 Comment la corruption et le clientélisme dans le secteur minier en République Démocratique du Congo affectent-ils le développement du pays ?
 
-### Brève revue de littérature
-La corruption et le clientélisme dans le secteur minier en République démocratique du Congo constituent des obstacles structurels majeurs au développement du pays. La littérature met en évidence un paradoxe bien établi : malgré la richesse minière exceptionnelle de la RDC (cuivre, cobalt, coltan), et sa place dans le marché extractive mondiale, le pays demeure l’un des plus pauvres du monde. En effet, en 2023 près de 62% de la population vivaient en dessous du seuil de pauvreté (World Bank, 2024).
+####  Revue de littérature
 
-Selon le rapport de l'ONG Global Witness (2019) la corruption, les contrats opaques et la captation des revenus par une minorité d’élites affaiblissent la capacité de l’État à financer des politiques publiques cohérentes qui sont sensé favorisées la redistribution des revenus issus de la rente ainsi que le développement économique du pays. 
+La République démocratique du Congo (RDC) est un pays qui occupe une place importante dans l’économie extractive mondiale. Malgré un sous-sol très riche (cuivre, cobalt, coltan etc...) le pays demeure l’un des plus pauvres au monde. En 2023, près de 62 % de la population vivait sous le seuil de pauvreté (World Bank, 2024). Ce paradoxe renvoie à la théorie de la malédiction des ressources.  Cette “malédiction” interroge les dynamiques  politiques et institutionnelles qui structurent l’économie de la RDC et plus précisément celles du secteur minier qui en est son principal moteur. De nombreux travaux montrent que l’exploitation minière est caractérisée par une corruption systémique, des pratiques clientélistes profondément enracinées  et un manque de transparence persistant dans la gestion des revenus (Global Witness, 2017 ; Natural Resource Governance Institute, 2023)
 
-Cette dynamique est confrimer lorsque l'on observe des indices comme l'IIAG (Indice Ibrahim de la Gouvernance en Afrique) classant la gouvernance de la RDC parmi les plus faibles du continent. Certains auteurs soulignent que l’absence de transparence, l’insuffisance des mécanismes de contrôle et le clientélisme institutionnalisé empêchent la mise en œuvre de stratégies de développement crédibles. C'est d'ailleurs le cas d’Acemoglu et Robinson à travers leur théorie des institutions extractives qui nous exepliquent que certaines institutions sont conçues pour permettre l’extraction de ressources par une minorité, celles-ci freinent le développement et la construction d’un État fort.
+Plusieurs chercheurs montrent que la rente minière constitue un instrument de maintien des loyautés politique. De ce fait elle est redistribuée sélectivement pour consolider le pouvoir, alimenter des réseaux d’influence et neutraliser les oppositions (Bratton & Van de Walle, 1997 ; Kamba-Kibatshi, 2016). Ce clientélisme institutionnalisé empêche la mise en place de mécanismes de contrôle efficaces, fragilise l’État et réduit la capacité de l’administration à imposer des normes, à collecter les revenus miniers et à assurer leur redistribution équitable.
 
-La plupart des sources que j'ai consulté converge vers le même point,le paradoxe de la RDC — richesse minérale mais pauvreté persistante — aussi appeler la malédictions des ressources s’explique par des institutions fragiles et des pratiques de gouvernance dysfonctionnelles.
+Les rapports de Global Witness révèlent l’ampleur des détournements structurels liés à la rente minière : entre 2013 et 2015, plus de 750 millions de dollars de revenus n’ont jamais atteint le Trésor public, tandis que seulement 6 % de la valeur des exportations minières parvient réellement au budget national (Global Witness, 2017). Cette fuite massive des ressources s’explique par un système de gestion fragmenté, où agences publiques, entreprises d’État et acteurs privés opèrent sans contrôle effectif. Le cas de la Gécamines illustre cette logique : bien qu’elle soit censée garantir que l’exploitation minière bénéficie à la population, elle fonctionne comme un instrument central de captation de la rente, concluant des joint-ventures et cessions d’actifs sans transparence, sans appel d’offres et sans traçabilité financière (Global Witness, 2017). De nombreux paiements effectués par les entreprises partenaires disparaissent avant d’être enregistrés, confirmant que certaines institutions publiques ont été progressivement façonnées pour permettre à une minorité de s’approprier les richesses nationales. Dans ce contexte, l’expansion du secteur minier n’a pas entraîné de développement inclusif, puisque plus de 60 % de la population vit encore sous le seuil de pauvreté malgré la croissance du secteur (World Bank, 2023).
 
-### Hypothèse
-La corruption et le clientélisme au sein du secteur minier ne sont pas un dysfonctionnement parmi d’autres : ils constituent l’un des piliers de l’ordre politique congolais, et l’un des obstacles majeurs à la consolidation institutionnelle et donc au développement du pays.  
+Les conséquences de cette gouvernance défaillante dépassent le seul champ institutionnel. En affaiblissant l’État, ces pratiques ouvrent la voie à des formes de concurrence violente autour des ressources, particulièrement dans l’Est du pays. Plusieurs travaux démontrent que la fragmentation du pouvoir, l’absence de régulation et les enjeux miniers attisent les conflits armés en permettant à des groupes armés, milices locales et acteurs transnationaux de contrôler les territoires riches en minerais (Autesserre, 2010 ; International Crisis Group, 2022). Ainsi, la corruption et le clientélisme ne sont pas des conséquences des conflits : ils en constituent l’une des causes structurelles en produisant un État faible, perméable aux prédations et incapable d’assurer une gouvernance stable du secteur minier.
+
+
+#### Hypothèse
+
+H1 : La corruption et le clientélisme au sein du secteur minier ne sont pas un dysfonctionnement parmi d’autres : ils constituent l’un des piliers de l’ordre politique congolais, et l’un des obstacles majeurs à la consolidation institutionnelle et donc au développement du pays.  
 
 ### Outils utilisés pour cette étape
-- **Google Scholar** : j'ai utilisé google scholar pour la recherche de revues académiques et de textes scientifiques.  
-- **Zotero** : j'ai utilisé cet outil pour l'organisation des sources.  
+- **Google Scholar** : j'ai utilisé google scholar pour la recherche de revues académiques et de textes scientifiques.
 - **Notebook LM** : j'ai utilisé Notebook LM pour dégager les concepts clés de mes sources mais aussi pour les comparées.
+- **Zoho Notebook** : cet outil m'a servis à organiser mes idées lorsque je collectais de nouvelles informations. 
+- **Zotero** : j'ai utilisé cet outil pour l'organisation des sources.  
+
 
 # 2. Collecte de données 
 
-Pour analyser l’évolution de la corruption et de la gouvernance en République démocratique du Congo, j’ai collecté deux ensembles de données provenant d’organisations internationales reconnues.
 
-### Données IPC (Transparency International)
+Pour analyser l’impact et les effets de la corruption et du cleintélisme en République démocratique du Congo, j’ai collecté deux ensembles de données provenant d’organisations internationales reconnues.
+
+#### Données IPC (Transparency International)
 J’ai extrait manuellement les scores annuels de l’Indice de perception de la corruption (IPC) depuis le site de Transparency International.  
 Comme l’extraction automatisée via API retournait une erreur serveur, j’ai recréé un tableau CSV contenant les scores du Congo de 2012 à 2024.  
 Ces données mesurent la perception de la corruption dans le secteur public (score entre 0 et 100).
 
-### Données IIAG (Mo Ibrahim Foundation)
+#### Données IIAG (Mo Ibrahim Foundation)
 J’ai également collecté les scores du sous-indice « Gouvernance globale » du Mo Ibrahim Index of African Governance (IIAG).  
 Pour ces données le site fournit directement un CSV téléchargeable, donc j'ai pu téléchargé les données directement. 
 
 Les deux tableaux ont été enregistrés au format CSV dans le dossier `data/` du projet, puis importés dans R à l’aide de la fonction `read.csv()`.
 
-```{r import_data}
+```{r import_data, echo=FALSE, message=FALSE, warning=FALSE}
 # Charger les données IPC (Transparency International)
 ipc <- read.csv("data/ipc_rdc.csv")
 
@@ -56,18 +66,7 @@ head(iiag)
 
 # 3. Analyse et visualisation des données 
 
-Pour analyser les données collectées, j’ai utilisé RStudio, et d'utiliser les packages dplyr et ggplot2.
-
-### Analyse de l’IPC
-
-J’ai importé les scores de l’Indice de Perception de la Corruption (Transparency International), puis j’ai visualisé leur évolution entre 2012 et 2024.
-Ce graphique permet d’observer les tendances de la corruption en RDC.
-
-### Analyse des données IIAG
-
-Les données IIAG exportées depuis le Mo Ibrahim Index étant brutes, j’ai effectué un nettoyage minimal pour isoler la ligne correspondant à la RDC, avant de représenter l’évolution de son score de gouvernance globale entre 2014 et 2023.
-
-Ces visualisations permettent de comparer deux indicateurs complémentaires sur la gouvernance et la corruption.
+Pour analyser les données collectées, j’ai utilisé RStudio et les packages dplyr et ggplot2.
 
 
 ```{r prep_donnees, echo=FALSE, message=FALSE, warning=FALSE}
@@ -93,6 +92,14 @@ iiag_long <- iiag %>%
   )
 ```
 
+
+#### Analyse de l’IPC :
+
+Les données de l’IPC étant déjà propres, je les ai importées directement dans R à l’aide de la fonction read.csv().
+J’ai ensuite structuré le tableau, converti les années au bon format et utilisé le package ggplot2 pour produire un graphique linéaire illustrant l’évolution du score entre 2012 et 2024.
+
+Ce graphique met en évidence les tendances dans la perception de la corruption en RDC, notamment les chutes brutales observées après 2018. L’usage de ggplot2 m’a permis de personnaliser les couleurs, les libellés, et d’obtenir une visualisation claire et facilement interprétable.
+
 ```{r graph_ipc, echo=FALSE, warning=FALSE}
 library(ggplot2)
 
@@ -106,6 +113,23 @@ ggplot(ipc, aes(x = annee, y = ipc_score)) +
     y = "Score IPC (0–100, plus élevé = moins corrompu)"
   )
 ```
+
+
+#### Analyse des données IIAG :
+
+Les données IIAG exportées depuis la plateforme Mo Ibrahim Foundation étaient plus complexes : elles contenaient plusieurs colonnes et catégories.
+J’ai donc utilisé les fonctions du package dplyr (rename(), pivot_longer(), filter()) pour :
+
+- sélectionner uniquement la RDC ;
+
+- uniformiser les années ;
+
+- transformer la table en format long, nécessaire pour la création d’un graphique ;
+
+- isoler le score global de gouvernance pour chaque année.
+
+Une fois les données nettoyées, j’ai généré une visualisation permettant d’observer l’évolution du score IIAG de la RDC ainsi que sa comparaison avec différentes régions africaines (Afrique centrale et CEDEAO).
+Cette étape a permis d'obtenir une vision comparative claire, ce qui appuie la compréhension des difficultés structurelles observées en RDC.
 
 ```{r graph_iiag,echo=FALSE, message=FALSE, warning=FALSE}
 groupes <- c(
@@ -128,3 +152,49 @@ ggplot(iiag_comp, aes(x = annee, y = score, color = localisation)) +
     color = "Localisation"
   )
 ```
+
+#### interprétation des résultats : 
+
+Les graphiques issus des données de Transparency International et de l’IIAG montrent une tendance convergente : la  RDC se situe durablement parmi les plus scores les plus faibles du continent. Le score IPC révèle une stabilité fragile autour de 21–22 points jusqu’en 2017, suivie d’une chute marquée dès 2018 et d’une stagnation à des niveaux très bas. Cette trajectoire reflète une perception de la corruption comme phénomène persistant, enraciné et difficile à défaire. L’IIAG confirme ce diagnostic. En effet la RDC se classe systématiquement en dessous de la moyenne africaine et nettement derrière des ensembles régionaux comme la CEDEAO, ce qui signale des difficultés structurelles en matière de transparence, d’efficacité administrative et de consolidation institutionnelle.
+
+Ces tendances viennent donc appuyées voir confirmer l'hypothèse de recherche. Les deux indices ne mesurent pas spécifiquement le secteur minier, mais ils capturent les effets institutionnels produits par sa gouvernance défaillante. Le secteur minier étant au cœur de la rente nationale, les pratiques de corruption, les contrats opaques et la redistribution clientéliste ont des répercussions systémiques sur "tout" les niveaux de l’État. Les faibles performances observées aux indices suggèrent que la gestion du secteur minier ne renforce pas l’État, mais elle contribue au contraire à sa fragilisation. Ainsi, les données empiriques corroborent l’idée que le clientélisme et la corruption dans ce secteur constituent des obstacles majeurs au développement, car ils limitent la capacité étatique à planifier, réguler et redistribuer de manière équitable.
+
+Cependant, il faut quand même tenir compte de certaines limites méthodologiques. Au cours de la recherche j'ai pu observé que la littérature disponible documente largement les pratiques des élites nationales mais reste moins précise sur les dynamiques locales, notamment le rôle des chefferies, des réseaux transfrontaliers et des autorités coutumières dans la captation des rentes. Ensuite, il est également difficile d’établir une causalité stricte entre clientélisme, conflits armés et sous-développement car ces phénomènes s’inscrivent dans un ensemble de facteurs historiques, régionaux et institutionnels qui se croisent et s’influencent mutuellement. Le cas de la République Démocratique du Congo reste un cas complexe 
+
+# 4. Discussion :
+
+
+Dans le cadre de ce projet, chaque outil mobilisé à était choisis pour répondre à une fonction précise permettant de structurer le travail et de produire une analyse claire et reproductible.
+
+Google Scholar a constitué le point d’entrée essentiel pour l’identification de sources scientifiques fiables. Son accessibilité, la richesse de son contenu et sa popularité dans la communauté académique en font un outil incontournable pour mener une revue de littérature solide. Pour organiser ces lectures, j’ai eu recours à Notebook LM et Zoho Notebook. Notebook LM m’a permis de dégager rapidement les concepts clés de mes textes et d’obtenir une vue synthétique des arguments, ce qui a facilité la comparaison entre les sources. Zoho Notebook, quant à lui, a répondu à mon besoin d’organisation plus personnelle : structurer mes idées, annoter mes trouvailles et suivre l’évolution de mes réflexions dans un espace flexible et intuitif. Ces deux outils ont été choisis pour leur simplicité d’utilisation, mais aussi pour leur capacité à s’adapter à différents types de contenus et de formats.
+
+Zotero a joué un rôle complémentaire en assurant une gestion rigoureuse des références. Sa compatibilité avec les normes bibliographiques et son intégration dans l’environnement académique en font un outil de référence pour garantir la crédibilité et la transparence des citations. Pour ce qui est du traitement des données et de la production des visualisations, j’ai choisi RStudio pour sa polyvalence . Le fait de pouvoir intégrer le code, l’analyse et les graphiques dans un même document Rmd m’a permis de produire un travail cohérent de façon pratique.
+Dans l’ensemble, la combinaison de ces outils reflète une philosophie de travail axée sur la structure et l’efficacité. Ils m’ont permis d’aborder le projet de manière méthodique, depuis la recherche documentaire jusqu’à la visualisation des résultats et la mise en ligne du site.  Je dirais que globalement j’ai choisis ces outils car ils sont  accessibles et gratuit pour tous en tout cas jusqu’à un certain niveau, mais c’est surtout pour leur efficacité qui est d’ailleurs prouvé par la grande communauté d’utilisateurs de ces outils, sauf pour Zoho Notebook qui est un plus discret mais tout aussi performant. 
+
+Un autre élément important ayant guidé mes choix d’outils concerne l’éthique de la recherche et la fiabilité des pratiques numériques. Choisir des outils largement utilisés dans la communauté académique n’est pas anodin : cela garantit non seulement une certaine transparence méthodologique, mais aussi une forme de sécurité intellectuelle. Le fait que ces outils disposent d’une grande communauté d’utilisateurs assure leur crédibilité, leur amélioration continue et l’existence de ressources fiables pour résoudre d’éventuels problèmes. Cette popularité n’est pas seulement un indicateur de mode, mais également un gage de robustesse : des milliers d’utilisateurs testent, corrigent et enrichissent les outils, ce qui permet de bénéficier des « meilleures versions » au fil du temps. Dans cette optique, mes choix s’inscrivent aussi dans une démarche éthique, visant à utiliser des outils éprouvés, documentés, et soutenus par une communauté active, afin de garantir la qualité et la transparence de ma démarche de recherche.
+
+
+
+#### Références : 
+
+
+Acemoglu, D., & Robinson, J. A. (2012). Why Nations Fail: The Origins of Power, Prosperity, and Poverty. Crown Publishers.
+
+Autesserre, S. (2010). The Trouble with the Congo: Local Violence and the Failure of International Peacebuilding. Cambridge University Press.
+
+Bratton, M., & van de Walle, N. (1997). Democratic Experiments in Africa: Regime Transitions in Comparative Perspective. Cambridge University Press.
+
+De Failly, D. (2013). La gestion des ressources naturelles en RDC : entre prédation et gouvernance.
+International Crisis Group – commentaire analytique (si tu veux, on peut préciser le document si tu as la ref exacte).
+
+Global Witness. (2017). Regime Cash Machine: How the Democratic Republic of Congo’s Booming Mining Exports Are Failing to Benefit Its People. Global Witness.
+
+International Crisis Group. (2022). Eaux troubles : violences, exploitation minière et rivalités régionales à l’Est de la RDC. International Crisis Group.
+
+Kamba-Kibatshi, C. (2016). Le clientélisme politique en République démocratique du Congo : logiques, acteurs et effets.
+
+Natural Resource Governance Institute (NRGI). (2023). Resource Governance Index – DRC Country Profile. NRGI.
+
+World Bank. (2023). Poverty and Equity Brief: Democratic Republic of Congo. World Bank Group.
+
+World Bank. (2024). World Development Indicators. World Bank.
